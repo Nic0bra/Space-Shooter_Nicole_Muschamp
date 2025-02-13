@@ -1109,7 +1109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4c9f232e049454ab769a7167729fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
+  playerSpeed: 12
   BulletProjectile: {fileID: 7534690393480856947, guid: f324d8cb994ac144f8f6c8352371798a, type: 3}
 --- !u!61 &1056947212
 BoxCollider2D:

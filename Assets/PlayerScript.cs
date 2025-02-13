@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     //Initialize variables
-    [SerializeField] float playerSpeed = 10.0f;
+    [SerializeField] float playerSpeed = 12.0f;
     [SerializeField] GameObject BulletProjectile;
 
     void Update()

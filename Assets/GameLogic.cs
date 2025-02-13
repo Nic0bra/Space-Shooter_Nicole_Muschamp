@@ -41,7 +41,7 @@ public class GameLogic : MonoBehaviour
         gameCanvas.SetActive(true);
         gameOverCanvas.SetActive(false);
 
-        //Set score for first game
+        //Set values for first game
         playerLife = 3;
         playerScore = 0;
         currentLevel = 0;
@@ -89,6 +89,9 @@ public class GameLogic : MonoBehaviour
     //Start or Reset Game
     public void ResetGame()
     {
+        //Stop ongoing enemies
+        spawnEnemies.StopSpawning();
+
         //Reset the Canvas to Start Screen
         startCanvas.SetActive(true);
         gameCanvas.SetActive(false);
@@ -102,9 +105,6 @@ public class GameLogic : MonoBehaviour
 
         //reset level
         currentLevel = 0;
-
-        //Stop ongoing enemies
-        spawnEnemies.StopSpawning();
     }
 
 
