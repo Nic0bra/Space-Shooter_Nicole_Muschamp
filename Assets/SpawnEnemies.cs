@@ -57,7 +57,7 @@ public class SpawnEnemies : MonoBehaviour
         KeepInBounds();
         int randomX = Random.Range(-8, 8);
         Vector2 enemyPosition = new Vector2(randomX, 8);
-        spawnTime = 5.0f;
+        spawnTime = 15.0f;
         Instantiate(levelOneEnemy, enemyPosition, Quaternion.identity);
         Debug.Log("Spawning working");
     }
@@ -68,7 +68,7 @@ public class SpawnEnemies : MonoBehaviour
         KeepInBounds();
         int randomX = Random.Range(-8, 8);
         Vector2 enemyPosition = new Vector2(randomX, 8);
-        spawnTime = 3.0f;
+        spawnTime = 10.0f;
         Instantiate(levelTwoEnemy, enemyPosition, Quaternion.identity);
     }
 
@@ -78,7 +78,7 @@ public class SpawnEnemies : MonoBehaviour
         KeepInBounds();
         int randomX = Random.Range(-8, 8);
         Vector2 enemyPosition = new Vector2(randomX, 8);
-        spawnTime = 1.5f;
+        spawnTime = 5.0f;
         Instantiate(levelThreeEnemy, enemyPosition, Quaternion.identity);
     }
 }
