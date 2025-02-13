@@ -1833,7 +1833,7 @@ GameObject:
   - component: {fileID: 1549091110}
   - component: {fileID: 1549091109}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2631,7 +2631,7 @@ MonoBehaviour:
   player: {fileID: 1056947208}
   enemySpeed: 1.5
   spawnEnemies: {fileID: 2022766209}
-  playerScript: {fileID: 0}
+  playerScript: {fileID: 1056947211}
   playerLifeText: {fileID: 1856768973}
   playerScoreText: {fileID: 1613038980}
   playerLife: 3
