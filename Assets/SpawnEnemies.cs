@@ -20,18 +20,18 @@ public class SpawnEnemies : MonoBehaviour
 
             if (level == 1)
             {
-                spawnTime = 2.0f;
+                spawnTime = 7.0f;
                 InvokeRepeating("SpawnLevelOneEnemy", 0f, spawnTime);
             }
             else if (level == 2)
             {
-                spawnTime = 1f;
+                spawnTime = 5.0f;
                 InvokeRepeating("SpawnLevelTwoEnemy", 0f, spawnTime);
                 CancelInvoke("SpawnLevelOneEnemy");
             }
             else if (level == 3)
             {
-                spawnTime = 0.5f;
+                spawnTime = 3.0f;
                 InvokeRepeating("SpawnLevelThreeEnemy", 0f, spawnTime);
                 CancelInvoke("SpawnLevelTwoEnemy");
             }
@@ -57,7 +57,7 @@ public class SpawnEnemies : MonoBehaviour
         KeepInBounds();
         int randomX = Random.Range(-8, 8);
         Vector2 enemyPosition = new Vector2(randomX, 8);
-        spawnTime = 15.0f;
+        spawnTime = 7.0f;
         Instantiate(levelOneEnemy, enemyPosition, Quaternion.identity);
         Debug.Log("Spawning working");
     }
@@ -68,7 +68,7 @@ public class SpawnEnemies : MonoBehaviour
         KeepInBounds();
         int randomX = Random.Range(-8, 8);
         Vector2 enemyPosition = new Vector2(randomX, 8);
-        spawnTime = 10.0f;
+        spawnTime = 5.0f;
         Instantiate(levelTwoEnemy, enemyPosition, Quaternion.identity);
     }
 
@@ -78,7 +78,7 @@ public class SpawnEnemies : MonoBehaviour
         KeepInBounds();
         int randomX = Random.Range(-8, 8);
         Vector2 enemyPosition = new Vector2(randomX, 8);
-        spawnTime = 5.0f;
+        spawnTime = 3.0f;
         Instantiate(levelThreeEnemy, enemyPosition, Quaternion.identity);
     }
 }
